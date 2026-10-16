@@ -163,7 +163,7 @@
       <span class="font-bold text-slate-300">TICKET ZONE EGYPT</span>
       <span>•</span>
       <button onclick="promptAdminLogin()" class="text-xs text-amber-500/80 hover:text-amber-400 underline">
-        دخول الإدارة (PIN: 1234)
+        
       </button>
     </div>
     <p>جميع الحقوق محفوظة © 2026 - نظام حجز التذاكر الإلكتروني</p>
@@ -513,7 +513,7 @@
     let ticketQuantity = 1;
     let lastBooking = null;
 
-    // PIN code for Admin (Default: 1234)
+    // PIN code for Admin 
     const ADMIN_PIN = "1234";
 
     function renderEvents() {
@@ -698,11 +698,11 @@
     // ADMIN PANEL LOGIC
     // ==========================================
     function promptAdminLogin() {
-      const entered = prompt("🔐 أدخل رمز الدخول للوحة التحكم (الافتراضي: 1234):");
+      const entered = prompt("🔐 أدخل رمز الدخول للوحة التحكم ):");
       if (entered === ADMIN_PIN) {
         openAdminModal();
       } else if (entered !== null) {
-        alert("❌ رمز الدخول غير صحيح! جرب: 1234");
+        alert("❌ رمز الدخول غير صحيح! جرب: ");
       }
     }
 
